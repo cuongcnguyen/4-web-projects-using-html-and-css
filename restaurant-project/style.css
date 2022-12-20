@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+.wrapper{
+    background: no-repeat url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 1.5rem;
+    width: 1000px;
+    max-width: 100%;
+}
+
+header .top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #026e78;
+    font-size: 1.5rem;
+}
+
+.top-header i{
+    margin-right: 1rem;
+}
+
+.top-header p{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+nav ul li{
+    flex: 1;
+}
+
+nav ul a{
+    display: block;
+    color: white;
+    background-color: #2d99a4;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 0;
+}
+
+nav a.home{
+    color: #026e78;
+    background-color: white;
+    font-weight: bold;
+}
+
+nav a.book{
+    background-color: #026e78;
+}
+
+nav a:hover{
+    opacity: 0.7;
+}
+
+main .text{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main p{    
+    padding: 1rem;
+    color: white;
+    font-size: 3rem;
+    font-weight: lighter;
+    background-color: #026e78;
+}
+
+main a{    
+    padding: 1rem;
+    font-size: 1.5rem;    
+    text-decoration: none;
+}
+
+main a.book{
+    color: #2d99a4;
+    background-color: white;
+    margin: 0 0 2rem;
+}
+
+main a.view{
+    color: white;
+    background-color: #2d99a4;
+}
+
+@media screen and (max-width: 768px) {
+    .top-header{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-header h1{
+        margin: 0;
+    }
+    .top-header p{
+        margin-top: 0;
+    }
+    nav ul{
+        flex-direction: column;        
+    }
+    main p, main a{
+        font-size: 1.5rem;
+    }
+}

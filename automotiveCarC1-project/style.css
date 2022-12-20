@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 1000px;
+    max-width: 100%;
+
+}
+
+.wrapper{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: no-repeat url(car-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.header .icon{
+    margin-right: 0.5rem;
+}
+
+.header .left-header{
+    color: white;
+    display: flex;
+    align-items: center;    
+    font-size: 2rem;
+}
+
+.header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.header ul a{
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+a.home{
+    font-weight: bold;
+}
+
+a.book{
+    color: white;
+    background-color: #00c2ff;
+}
+
+main{
+    flex: 1; 
+    display: flex;
+}
+
+main .main-text{
+    margin: auto;
+    max-width: 100%;
+}
+
+main p.blue{
+    color: #00c2ff;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+main p{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main button{
+    color: white;
+    background-color: #00c2ff;
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: none;  
+}
+
+footer{
+    background-color: black;
+}
+
+footer .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p{
+    color: white;
+    margin: 0;
+}
+
+footer .col{
+    margin: 2rem 0 2rem;
+}
+
+footer p.lightblue{
+    color: #00c2ff;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .header nav ul{
+        flex-direction: column;
+    }
+
+    a.hidden{
+        display: none;
+    }
+
+    main .main-text .blue{
+        font-size: 2.5rem;
+    }
+
+    footer .row{
+        flex-direction: column;
+        text-align: center;        
+    }
+
+    footer .row .col{
+        margin: 0 0 0.5rem;
+    }
+}
